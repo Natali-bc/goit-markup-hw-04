@@ -32,6 +32,7 @@ ul {
 	padding: 0;
 	margin: 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -57,6 +58,7 @@ address {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	border-bottom: 1px solid #ececec;
 }
 .navigation {
 	display: flex;
@@ -85,6 +87,12 @@ address {
 .site-nav {
 	display: flex;
 }
+/* .site-nav-item::before {
+	content: "";
+}
+.site-nav-item::after {
+	content: "";
+} */
 .site-nav-item:not(:last-child) {
 	margin-right: 50px;
 }
@@ -192,6 +200,57 @@ address {
 	text-align: center;
 	margin-bottom: 50px;
 }
+.feature-list .item.details::before {
+	content: "";
+	display: block;
+	width: 270px;
+	height: 120px;
+	background-color: var(--title-background-color);
+	background-image: url(../images/antenna.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.feature-list .item.punctuality::before {
+	content: "";
+	display: block;
+	width: 270px;
+	height: 120px;
+	background-color: var(--title-background-color);
+	background-image: url(../images/clock.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.feature-list .item.planning::before {
+	content: "";
+	display: block;
+	width: 270px;
+	height: 120px;
+	background-color: var(--title-background-color);
+	background-image: url(../images/diagram.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.feature-list .item.tech::before {
+	content: "";
+	display: block;
+	width: 270px;
+	height: 120px;
+	background-color: var(--title-background-color);
+	background-image: url(../images/astronaut.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.feature-list .title {
+	margin-bottom: 10px;
+}
 /* Our works  */
 
 .work-list {
@@ -244,17 +303,35 @@ address {
 	color: var(--title-text-color);
 	font-size: 16px;
 	line-height: 1.9;
+	padding-bottom: 16px;
 }
 .team-descr {
 	background: #ffffff;
-	height: 108px;
+	min-height: 108px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
-
+.social-list {
+	display: flex;
+	justify-content: center;
+}
+.social-list .social-link {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: tomato;
+}
+.social-link-instagram {
+	/* background-size: 20px 20px; */
+}
 /* Footer */
 
 .footer.container {
 	background-color: var(--footer-background-color);
 	min-height: 220px;
+	display: flex;
+	flex-direction: column;
 }
 .footer-nav {
 	background-color: var(--footer-background-color);
@@ -262,7 +339,6 @@ address {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
-	margin-top: 60px;
 	margin-left: 215px;
 }
 .footer-contacts {
