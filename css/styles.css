@@ -6,6 +6,7 @@
 	--title-background-color: #f5f4fa;
 	--footer-color: rgba(255, 255, 255, 0.6);
 	--footer-background-color: #2f303a;
+	--logo-color: #afb1b8;
 }
 
 *,
@@ -277,18 +278,16 @@ address {
 .team {
 	display: flex;
 }
+.team-section {
+	padding-bottom: 94px;
+	background-color: var(--title-background-color);
+}
 .team .item {
 	width: calc((100% - 90px) / 4);
-	margin-bottom: 154px;
 	text-align: center;
 }
 .team .item:not(:last-child) {
 	margin-right: 30px;
-}
-
-.team-section .container {
-	background-color: var(--title-background-color);
-	margin-bottom: 94 px;
 }
 
 .team .name {
@@ -310,28 +309,42 @@ address {
 	min-height: 108px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
+	padding-bottom: 30px;
+	padding-right: 32px;
+	padding-left: 32px;
 }
 .social-list {
 	display: flex;
 	justify-content: center;
 }
 .social-list .social-link {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	background-color: tomato;
+	color: var(--logo-color);
 }
-.social-link-instagram {
-	/* background-size: 20px 20px; */
+.social-list-item:not(:last-child) {
+	margin-right: 10px;
+}
+.social-link-svg {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+.social-link:hover {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
 }
 /* Footer */
 
-.footer.container {
+.footer {
 	background-color: var(--footer-background-color);
 	min-height: 220px;
 	display: flex;
-	flex-direction: column;
+	padding-top: 60px;
 }
 .footer-nav {
 	background-color: var(--footer-background-color);
@@ -339,9 +352,9 @@ address {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
-	margin-left: 215px;
 }
 .footer-contacts {
+	display: block;
 	background-color: var(--footer-background-color);
 	color: var(--footer-color);
 	font-size: 14px;
@@ -349,7 +362,6 @@ address {
 	text-decoration: none;
 }
 .footer.logo {
-	margin-left: 215px;
 }
 
 /* .footer-join {
@@ -360,9 +372,7 @@ address {
 	line-height: 1.14;
 	text-transform: uppercase;
 } */
-.footer-logo {
-	padding-top: 60px;
-}
+
 /* Стили для портфолио */
 .projects .btn {
 	background-color: var(--title-background-color);
