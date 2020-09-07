@@ -7,6 +7,7 @@
 	--footer-color: rgba(255, 255, 255, 0.6);
 	--footer-background-color: #2f303a;
 	--logo-color: #afb1b8;
+
 }
 
 *,
@@ -25,7 +26,15 @@ body {
 img {
 	display: block;
 }
-visually-hidden {
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 ul {
@@ -145,6 +154,18 @@ address {
 	padding-bottom: 280px;
 	background-color: var(--footer-background-color);
 }
+/* Overlay */
+.overlay {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/bcg-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .hero-title {
 	color: var(--primary-white-color);
@@ -253,13 +274,16 @@ address {
 	margin-bottom: 10px;
 }
 /* Our works  */
+.section-title {
+	padding-top: 94px;
+}
 
 .work-list {
 	display: flex;
 	justify-content: space-between;
 }
 .work-list .item {
-	margin-bottom: 188px;
+	margin-bottom: 94px;
 }
 .section .text {
 	color: var(--title-text-color);
@@ -311,6 +335,7 @@ address {
 	padding-bottom: 30px;
 	padding-right: 32px;
 	padding-left: 32px;
+	margin-bottom: 94px;
 }
 .social-list {
 	display: flex;
@@ -345,6 +370,7 @@ address {
 }
 .clients-list-item {
 	width: calc((100% - 5 * 30px) / 6);
+	margin-bottom: 94px;
 }
 .clients-list-item:not(:last-child) {
 	margin-right: 30px;
@@ -391,15 +417,43 @@ address {
 	line-height: 1.71;
 	text-decoration: none;
 }
+.footer-social-list {
+	display: flex;
+	justify-content: center;
+}
+.footer-social-list .footer-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: var(--primary-white-color);
+	background-color: rgba(255, 255, 255, 0.1);;
 
-/* .footer-join {
-	background-color: var(--footer-background-color);
+}
+.footer-list-item:not(:last-child) {
+	margin-right: 10px; {
+}
+
+
+
+.footer-link-svg {
+	
+	width: 20px;
+	height: 20px;
+		color: var(--primary-white-color);
+		
+}
+
+.footer-join {
+	
 	color: var(--primary-white-color);
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
-} */
+}
 
 /* Стили для портфолио */
 .projects .btn {
