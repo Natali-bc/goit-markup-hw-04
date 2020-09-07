@@ -466,9 +466,7 @@ address {
 .footer-social-link:hover {
 	background-color: var(--accent-color);
 }
-/* b {
-	margin-bottom: 20px;
-} */
+
 .footer-link-svg {
 	width: 20px;
 	height: 20px;
