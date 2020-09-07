@@ -7,7 +7,6 @@
 	--footer-color: rgba(255, 255, 255, 0.6);
 	--footer-background-color: #2f303a;
 	--logo-color: #afb1b8;
-
 }
 
 *,
@@ -429,30 +428,30 @@ address {
 	height: 44px;
 	border-radius: 50%;
 	color: var(--primary-white-color);
-	background-color: rgba(255, 255, 255, 0.1);;
-
+	background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-list-item:not(:last-child) {
-	margin-right: 10px; {
+	margin-right: 10px;
+}
+.footer-social-link:hover {
+	background-color: var(--accent-color);
 }
 
-
-
 .footer-link-svg {
-	
 	width: 20px;
 	height: 20px;
-		color: var(--primary-white-color);
-		
+	fill: currentColor;
 }
 
 .footer-join {
-	
 	color: var(--primary-white-color);
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Стили для портфолио */
