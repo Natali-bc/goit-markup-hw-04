@@ -96,12 +96,7 @@ address {
 .site-nav {
 	display: flex;
 }
-/* .site-nav-item::before {
-	content: "";
-}
-.site-nav-item::after {
-	content: "";
-} */
+
 .site-nav-item:not(:last-child) {
 	margin-right: 50px;
 }
@@ -146,6 +141,24 @@ address {
 	color: var(--accent-color);
 }
 
+.contacts .mail-svg {
+	width: 16px;
+	height: 12px;
+	fill: var(--title-text-color);
+	margin-right: 10 px;
+}
+.contacts .mail-svg:hover {
+	fill: var(--accent-color);
+}
+.contacts .phone-svg {
+	width: 10px;
+	height: 12px;
+	fill: var(--title-text-color);
+	margin-right: 10 px;
+}
+.contacts .phone-svg:hover {
+	fill: var(--accent-color);
+}
 /* Hero */
 .hero {
 	text-align: center;
@@ -411,6 +424,8 @@ address {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
+	margin-top: 20px;
+	margin-bottom: 9px;
 }
 .footer-contacts {
 	display: block;
@@ -419,6 +434,8 @@ address {
 	font-size: 14px;
 	line-height: 1.71;
 	text-decoration: none;
+	margin-bottom: 9px;
+	margin-top: 9px;
 }
 .footer-social-list {
 	display: flex;
@@ -436,6 +453,9 @@ address {
 }
 .footer-item {
 	width: calc((50% - 45px) / 2);
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
 }
 .footer-item:not(:last-child) {
 	margin-right: 30px;
@@ -446,7 +466,9 @@ address {
 .footer-social-link:hover {
 	background-color: var(--accent-color);
 }
-
+/* b {
+	margin-bottom: 20px;
+} */
 .footer-link-svg {
 	width: 20px;
 	height: 20px;
@@ -461,6 +483,7 @@ address {
 	text-transform: uppercase;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 /* Стили для портфолио */
