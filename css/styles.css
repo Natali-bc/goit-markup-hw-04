@@ -401,6 +401,9 @@ address {
 	display: flex;
 	padding-top: 60px;
 }
+.footer .container {
+	display: flex;
+}
 .footer-nav {
 	background-color: var(--footer-background-color);
 	color: var(--primary-white-color);
