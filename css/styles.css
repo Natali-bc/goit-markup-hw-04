@@ -69,6 +69,11 @@ address {
 	justify-content: space-between;
 	border-bottom: 1px solid #ececec;
 }
+/* .header .container::after {
+	content: "";
+	width: 1200px;
+	border: 1px solid #ececec;
+} */
 .navigation {
 	display: flex;
 	align-items: center;
@@ -451,14 +456,15 @@ address {
 	color: var(--primary-white-color);
 	background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-item {
+.footer-join {
 	width: calc((50% - 45px) / 2);
 	justify-content: center;
 	align-items: center;
 	display: inline-block;
 	margin-bottom: 20px;
 }
-.footer-item:not(:last-child) {
+
+.footer-join:not(:last-child) {
 	margin-right: 30px;
 }
 .footer-list-item:not(:last-child) {
@@ -473,8 +479,7 @@ address {
 	height: 20px;
 	fill: currentColor;
 }
-
-.footer-join {
+.footer .footer-join {
 	color: var(--primary-white-color);
 	font-weight: bold;
 	font-size: 14px;
