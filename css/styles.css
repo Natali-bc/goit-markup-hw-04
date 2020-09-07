@@ -403,6 +403,7 @@ address {
 }
 .footer .container {
 	display: flex;
+	align-items: baseline;
 }
 .footer-nav {
 	background-color: var(--footer-background-color);
@@ -432,6 +433,12 @@ address {
 	border-radius: 50%;
 	color: var(--primary-white-color);
 	background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-item {
+	width: calc((50% - 45px) / 2);
+}
+.footer-item:not(:last-child) {
+	margin-right: 30px;
 }
 .footer-list-item:not(:last-child) {
 	margin-right: 10px;
